@@ -89,6 +89,8 @@ class Project(db.Model):
   code_repo = db.StringProperty(indexed=False, default="")
   home_page = db.StringProperty(indexed=False, default="")
   bug_tracker = db.StringProperty(indexed=False, default="")
+  irc_channel = db.StringProperty(indexed=False, default="")
+  mailing_list = db.StringProperty(indexed=False, default="")
 
   @property
   def name(self):

@@ -57,6 +57,26 @@
       {% endif %}
       </td>
     </tr>
+    <tr>
+      <td align='right' class='f'><nobr>IRC Channel:</nobr></td>
+      <td>
+      {% if edit_mode %}
+         <input name='irc_channel' value="{{ project.irc_channel|escape }}" size='40' />
+      {% else %}
+         {{ project.irc_channel|linkify }}
+      {% endif %}
+      </td>
+    </tr>
+    <tr>
+      <td align='right' class='f'><nobr>IRC Channel:</nobr></td>
+      <td>
+      {% if edit_mode %}
+         <input name='mailing_list' value="{{ project.mailing_list|escape }}" size='40' />
+      {% else %}
+         {{ project.mailing_list|linkify }}
+      {% endif %}
+      </td>
+    </tr>
 
     <tr valign='top'>
       <td align='right' class='f'>How to submit patches:</td>

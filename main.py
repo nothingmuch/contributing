@@ -201,6 +201,8 @@ class ProjectEditHandler(webapp.RequestHandler):
     project.code_repo = self.request.get("code_repo")
     project.home_page = self.request.get("home_page")
     project.bug_tracker = self.request.get("bug_tracker")
+    project.irc_channel = self.request.get("irc_channel")
+    project.mailing_list = self.request.get("mailing_list")
     project.put()
     self.redirect('/' + project_key)
 
